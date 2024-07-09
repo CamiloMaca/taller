@@ -10,6 +10,8 @@
     <h1>lista de jugadores</h1>
     <a href="{{route('jugador.create')}}">ingresar un nuevo jugador</a>
     <br>
+    <a href="{{route('gol.create')}}">asignar un gol a un jugador</a>
+    <br>
     @foreach ($jugadores as $jugador)
         <tr>
             <br>

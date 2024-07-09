@@ -9,6 +9,8 @@
 <body>
     <h1>Lista de Goles</h1>
     <a href="{{ route('gol.create') }}">Ingresar un nuevo gol</a>
+    <br>
+    <a href="{{route('jugador.create')}}">Ingresar un nuevo jugador</a>
     <hr>
         @foreach ($gols as $gol)
             <tr>

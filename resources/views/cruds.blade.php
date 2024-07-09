@@ -10,5 +10,9 @@
     <a href="{{route('jugador.create')}}">jugador create</a>
     <br>
     <a href="{{route('jugador.index')}}">jugador index</a>
+    <br>
+    <a href="{{route('gol.create')}}">gol create</a>
+    <br>
+    <a href="{{route('gol.index')}}">gol index</a>
 </body>
 </html>

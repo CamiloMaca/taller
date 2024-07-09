@@ -10,10 +10,10 @@ class Partido extends Model
     use HasFactory;
 
     public function gol(){
-        $this->belongsTo(Gol::class);
+        return $this->belongsTo(Gol::class);
     }
 
     public function equipos(){
-        $this->belongsToMany(Equipo::class);
+        return $this->belongsToMany(Equipo::class);
     }
 }

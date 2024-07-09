@@ -10,11 +10,11 @@ class Jugador extends Model
     use HasFactory;
 
     public function gols(){
-        $this->hasMany(Gol::class);
+        return $this->hasMany(Gol::class);
     } 
 
     public function equipos(){
-        $this->hasMany(Equipo::class);
+        return $this->hasMany(Equipo::class);
     }
 
     protected $fillable = [

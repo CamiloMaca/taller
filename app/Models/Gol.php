@@ -10,10 +10,16 @@ class Gol extends Model
     use HasFactory;
 
     public function jugador(){
-        $this->belongsTo(Jugador::class);
+        return $this->belongsTo(Jugador::class);
     }
 
     public function partidos(){
-        $this->hasMany(Partido::class);
+        return $this->hasMany(Partido::class);
     }
+
+    protected $fillable = [
+        'jugador_id',
+        'min',
+        'descripcion',
+    ];
 }

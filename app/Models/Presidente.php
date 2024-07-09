@@ -10,6 +10,6 @@ class Presidente extends Model
     use HasFactory;
 
     public function equipo(){
-        $this->hasOne(Equipo::class);
+        return $this->hasOne(Equipo::class);
     }
 }

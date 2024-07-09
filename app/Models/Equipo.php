@@ -10,14 +10,14 @@ class Equipo extends Model
     use HasFactory;
 
     public function jugador(){
-        $this->belongsTo(Jugador::class);
+        return $this->belongsTo(Jugador::class);
     }
 
     public function presidente(){
-        $this->belongsTo(Presidente::class);
+        return $this->belongsTo(Presidente::class);
     }
 
     public function partidos(){
-        $this->belongsToMany(Partido::class);
+        return $this->belongsToMany(Partido::class);
     }
 }
